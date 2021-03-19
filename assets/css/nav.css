@@ -1,0 +1,99 @@
+:root {
+    --nav-font-size: 1.4rem;
+    --nav-padding-bottom: 15px;
+}
+
+nav {
+    width: 100%;
+    padding-bottom: var(--nav-padding-bottom);
+    font-size: var(--nav-font-size);
+    display: flex;
+    border-bottom: 1px solid var(--black-75);
+}
+
+.nav-head {
+    padding-left: 10px;
+    width: 650px;
+}
+
+.nav-pagelinks {
+    width: 450px; 
+}
+
+.nav-iconlinks {
+    text-align: right;
+    width: 150px;
+}
+
+.nav-pagelinks a {
+    padding: 0 15px;
+}
+
+.nav-iconlinks a {
+    padding: 0 3px;
+}
+
+a[class="bandcamp"]::after {
+    content: url(../icons/bandcamp.png);
+    zoom: 0.04;
+    opacity: 0.75;
+    margin-left: 0px;
+    position: relative;
+    top: 60px;
+}
+
+a[class="basket"]::after {
+    content: url(../icons/basket.png);
+    zoom: 0.04;
+    opacity: 0.75;
+    margin-left: 0px;
+    position: relative;
+    top: 60px;
+}
+
+a[class="bandcamp"]:hover,
+a[class="basket"]:hover {
+    border-bottom: 2px solid var(--cyan-75);
+}
+
+
+.artists {
+    display: inline-block;
+    position: relative;
+}
+
+.label {
+    display: inline-block;
+}
+
+.contact {
+    display: inline-block;
+}
+
+.artists ul {
+    background: var(--cyan-75);
+    width: max-content;
+    position: absolute;
+    margin-top: 16px;
+    padding: 30px;
+    list-style: none;
+    line-height: 3rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+}
+
+ul a {
+    color: white;
+}
+
+ul a:hover {
+    color: var(--yellow-75);
+}
+
+.artists a:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
