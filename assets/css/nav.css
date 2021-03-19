@@ -34,7 +34,7 @@ nav {
 }
 
 a[class="bandcamp"]::after {
-    content: url(/sacredrealism/assets/icons/bandcamp.png);
+    content: url(../assets/icons/bandcamp.png);
     zoom: 0.04;
     opacity: 0.75;
     margin-left: 0px;
@@ -43,7 +43,7 @@ a[class="bandcamp"]::after {
 }
 
 a[class="basket"]::after {
-    content: url(/sacredrealism/assets/icons/basket.png);
+    content: url(../assets/icons/basket.png);
     zoom: 0.04;
     opacity: 0.75;
     margin-left: 0px;
